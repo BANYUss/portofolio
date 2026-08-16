@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+@import url('https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #0a0a0a;
+  --surface: #111111;
+  --border: #1f1f1f;
+  --border-light: #2a2a2a;
+  --text-primary: #f5f5f5;
+  --text-secondary: #a1a1aa;
+  --text-muted: #52525b;
+  --accent: #818cf8;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  background-color: var(--bg);
+  color: var(--text-primary);
+  font-family: "Inter", system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+::selection { background: var(--accent); color: #fff; }
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: var(--bg); }
+::-webkit-scrollbar-thumb { background: var(--border-light); border-radius: 2px; }
+
+/* ===== MOBILE RESPONSIVE ===== */
+@media (max-width: 640px) {
+
+  /* Experience grid */
+  .exp-grid {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 0.5rem !important;
+  }
+  .exp-date-col {
+    min-width: unset !important;
+    width: 100% !important;
+  }
+
+  /* Projects grid */
+  .projects-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Skills grid */
+  .skills-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Certifications grid */
+  .cert-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Contact */
+  .contact-inner {
+    max-width: 100% !important;
+  }
+
+  /* Section padding */
+  section {
+    padding-left: 1.25rem !important;
+    padding-right: 1.25rem !important;
+  }
+
+  /* Stats */
+  .stats-row {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 1rem !important;
+  }
+}
