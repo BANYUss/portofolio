@@ -71,7 +71,7 @@ export const PROJECTS: Project[] = [
     tags: ["Next.js 14", "TypeScript", "Prisma", "PostgreSQL", "Recharts", "Railway"],
     featuredTag: "Gemini AI",
     github: "https://github.com/BANYUss",
-    live: "https://dompetku-production-4f93.up.railway.app/",
+    live: "https://dompetku-gkbj.vercel.app/",
   },
   {
     name: "DocChat — AI PDF Assistant",
