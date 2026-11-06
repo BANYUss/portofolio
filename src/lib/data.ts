@@ -61,6 +61,19 @@ export type Project = {
 
 export const PROJECTS: Project[] = [
   {
+    name: "DriveGo — Modern Car Rental Platform",
+    category: "Web Application",
+    filter: ["web"],
+    description:
+      "A modern, responsive car rental platform featuring a dynamic vehicle catalog, blog articles, and direct WhatsApp booking integration.",
+    image: "/projects/drivegoporto.png",
+    icon: "ti-car",
+    tags: ["Next.js 16", "React", "TypeScript", "Tailwind CSS"],
+    featuredTag: "Turbopack",
+    github: "https://github.com/BANYUss/drivego-website",
+    live: "https://drivego-website-flax.vercel.app//", 
+  },
+  {
     name: "Dompetku — Personal Finance Tracker",
     category: "Full-stack Web Application + AI",
     filter: ["web", "ai"],
